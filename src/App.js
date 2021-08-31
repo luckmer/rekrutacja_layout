@@ -1,11 +1,17 @@
-import { NavBar, VisitPanel } from "./components/index";
+import * as Component from "./components/index";
 import { Main } from "./css/components/App.style";
 
 const App = () => {
   return (
     <Main>
-      <NavBar />
-      <VisitPanel />
+      <Component.NavBar />
+      <Component.VisitPanel />
+      <Component.Investors />
+      <Component.Offers />
+      <Component.Statistics />
+      <Component.About />
+      <Component.Business />
+      <Component.Footer />
     </Main>
   );
 };
