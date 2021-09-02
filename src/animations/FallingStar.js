@@ -29,19 +29,18 @@ function FallingStar() {
     let FirstLinePart = new TimelineMax({ repeat: -1 });
     let LastLinePart = new TimelineMax({ repeat: -1 });
 
-    let FirstDotPart = new TimelineMax({ repeat: -1 });
-    let LasDotPart = new TimelineMax({ repeat: -1 });
-
-    console.log(lineRef.length, dotRef.length);
-
     const half = Math.ceil(lineRef.length / 2);
+
     const firstLines = lineRef.splice(0, half);
     const lastLines = lineRef.splice(-half);
+
+    let FirstDotPart = new TimelineMax({ repeat: -1 });
+    let LasDotPart = new TimelineMax({ repeat: -1 });
 
     const Half = Math.ceil(dotRef.length / 2);
 
     const firstDots = dotRef.splice(0, Half);
-    const secondHalf = dotRef.splice(-Half);
+    const lastDots = dotRef.splice(-Half);
 
     firstLines.forEach((el) => {
       const current = el.current;
@@ -78,7 +77,7 @@ function FallingStar() {
         .to(current, 0.2, { opacity: "0" });
     });
 
-    secondHalf.forEach((dot) => {
+    lastDots.forEach((dot) => {
       const current = dot.current;
       LasDotPart.from(current, 0.3, { x: 0, y: -48, opacity: 0 })
         .to(current, 0.3, {
