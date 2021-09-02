@@ -1,44 +1,103 @@
 import horizontal from "../img/Flip-horizontal.png";
 import Attachment from "../img/Attachment#1.png";
 import Move from "../img/Thunder-move.png";
+import Swiss from "../img/Swiss-knife.png";
 import airPods from "../img/Airpods.png";
 import bulb from "../img/Bulb#1.png";
 import lte from "../img/LTE#1.png";
+import twitter from "../img/Twitter.png";
+import google from "../img/google.png";
+import facebook from "../img/facebook.png";
+
+export const footerLogo = "ARShakir";
+
+export const btnDesc = "SEND";
 
 export const start = "GET STARTED";
 
 export const offer = "Your choice";
 
-export const staticHeader = "Increase your business ";
-
 export const staticMain = "traffic";
 
-export const staticDesc =
-  "We are committed to processing the information in order to contact you and talk about your project.";
 export const staticBtn = "Learn More";
 
-export const offerDescription =
-  "There are many reasons to get down and start to get depressed about your situation.";
+export const watch = "Watch preview";
+
+export const businessMain = "business";
+
+export const cardValue = "$176,000";
+
+export const cardDesc = "Funding Request";
+
+export const BackCardHeader = "6 month";
+
+export const backCardDesc = "increase 12%";
+
+export const cardHeader = "Omah mukti residence";
+
+export const staticHeader = "Increase your business ";
+
+export const cardSpan = "Merpati sidomuncul 26 street, UK";
+
+export const businessHeader = "Invest property for better ";
+
+export const groupHeader = "Help Finding Information Online";
 
 export const initialText =
   "Many reasons to get up and start to get back in the business";
 
+export const contactHeader = "There are many reasons to get down";
+
+export const spamBlocker = "No spam. Only releases, updates and discounts";
+
 export const description =
   "The harder you work for something, the greater you’ll feel when you achieve it.";
 
-export const watch = "Watch preview";
+export const offerDescription =
+  "There are many reasons to get down and start to get depressed about your situation.";
 
-export const userText = ["ABOUT", "GALLERY", "PRICING", "FAG", "BENEFITS"];
-export const loginText = ["SIGN IN ", "SIGN UP"];
-export const buttons = ["LEARN MORE", "DEMO"];
+export const contactDesc =
+  "There are many reasons to get down and start to get depressed about your situation.";
 
-export const businessHeader = "Invest property for better ";
-export const businessMain = "business";
-export const businessDesc =
-  "We are committed to processing the information in order to contact you and talk about your project. We are committed to processing the information.";
+export const staticDesc =
+  "We are committed to processing the information in order to contact you and talk about your project.";
+
+export const groupDesc =
+  "Fully customizable and neatly organized components will help you work faster without limiting creative freedom.";
 
 export const aboutDesc =
   "Fully customizable and neatly organized components will help you work faster without limiting creative freedom.";
+
+export const businessDesc =
+  "We are committed to processing the information in order to contact you and talk about your project. We are committed to processing the information.";
+
+export const loginText = ["SIGN IN ", "SIGN UP"];
+
+export const buttons = ["LEARN MORE", "DEMO"];
+
+export const Logos = [{ img: google }, { img: twitter }, { img: facebook }];
+
+export const userText = ["ABOUT", "GALLERY", "PRICING", "FAG", "BENEFITS"];
+
+export const groupData = [
+  {
+    img: Swiss,
+    header: "Feature One",
+    desc: "Fully customizable and neatly organized components will help you work faster",
+  },
+  {
+    img: lte,
+    header: "Feature Two",
+    desc: "Fully customizable and neatly organized components will help you work faster",
+  },
+];
+
+export const footerDesc = [
+  { proc: "13%", data: "Apr" },
+  { proc: "68%", data: "Ltv" },
+  { proc: "12 mth", data: "Loan" },
+];
+
 export const aboutStatistics = [
   {
     value: "100+",

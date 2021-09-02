@@ -1,16 +1,16 @@
 import { Main, Right, Left } from "../css/components/Investors.style";
-import FallingStars from "../img/FallingStars.png";
 import investors from "../img/Logo.png";
+import FallingStar from "../animations/FallingStar";
 
 const Investors = () => {
   return (
     <Main>
       <Right>
-        <img src={FallingStars} alt="" />
+        <FallingStar />
       </Right>
       <img src={investors} alt="" />
       <Left>
-        <img src={FallingStars} alt="" />
+        <FallingStar />
       </Left>
     </Main>
   );
