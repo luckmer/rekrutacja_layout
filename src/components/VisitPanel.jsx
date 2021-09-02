@@ -1,13 +1,8 @@
+import * as V from "../css/components/VisitPanel.style";
 import * as U from "../css/components/NavBar.style";
+import * as Constants from "../Constants/Constants";
 import playButton from "../img/playButton.png";
 import man from "../img/man.png";
-import * as V from "../css/components/VisitPanel.style";
-import {
-  initialText,
-  description,
-  buttons,
-  watch,
-} from "../Constants/Constants";
 
 const VisitPanel = () => {
   return (
@@ -15,16 +10,16 @@ const VisitPanel = () => {
       <V.Spacer>
         <div>
           <V.P Color="#99efd0" set={true}>
-            {initialText}
+            {Constants.initialText}
           </V.P>
         </div>
         <div>
           <V.P Color="#8476AA" set={false}>
-            {description}
+            {Constants.description}
           </V.P>
         </div>
         <U.Spacer>
-          {buttons.map((el, i) => (
+          {Constants.buttons.map((el, i) => (
             <V.BtnSpacer key={i}>
               <U.Sizer value={el}>
                 <p>{el}</p>
@@ -34,12 +29,12 @@ const VisitPanel = () => {
         </U.Spacer>
         <V.BottomPanel>
           <V.ImgPanel>
-            <img src={playButton} alt={playButton} />
+            <img src={playButton} alt="" />
           </V.ImgPanel>
           <div>
             <V.PBottom Color="#8476AA">
-              {description}
-              <span>{watch}</span>
+              {Constants.description}
+              <span>{Constants.watch}</span>
             </V.PBottom>
           </div>
         </V.BottomPanel>
