@@ -1,16 +1,17 @@
 import { aboutDesc, aboutStatistics } from "../Constants/Constants";
 import * as nav from "../css/components/NavBar.style";
 import * as A from "../css/components/About.style";
+import FallingStar from "../animations/FallingStar";
 import { start } from "../Constants/Constants";
-import Star from "../img/RightStar.png";
 import Circle from "../img/cirlce.png";
 
 const About = () => {
   return (
     <A.Section>
-      <A.Right id="here">
-        <img src={Star} alt="" />
+      <A.Right>
+        <FallingStar />
       </A.Right>
+
       <A.Header>
         <A.P>
           3 Simple Ways To <A.Span>Save</A.Span> A Bunch Of{" "}
