@@ -12,7 +12,6 @@ export const Main = styled.div`
 export const Right = styled.div`
   position: absolute;
   left: 0;
-  z-index: -1;
 
   @media screen and (min-width: 910px) {
     width: 300px;
@@ -24,18 +23,17 @@ export const Right = styled.div`
     height: 100%;
   }
 
-  img {
-    opacity: 0.1;
+  svg {
+    opacity: 0.5;
   }
 `;
 export const Left = styled.div`
   position: absolute;
   right: 0;
   width: 300px;
-  z-index: -1;
 
   @media screen and (min-width: 910px) {
-    width: 300px;
+    right: 200px;
     height: 100%;
   }
 
@@ -44,7 +42,9 @@ export const Left = styled.div`
     height: 100%;
   }
 
-  img {
-    opacity: 0.1;
+  svg {
+    position: absolute;
+    right: 0;
+    opacity: 0.5;
   }
 `;

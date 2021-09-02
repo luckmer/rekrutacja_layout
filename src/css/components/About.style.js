@@ -8,11 +8,6 @@ export const Section = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
 `;
 
 export const AboutPanel = styled.div`
@@ -98,16 +93,18 @@ export const Desc = styled.span`
 export const Right = styled.div`
   position: absolute;
   left: 0;
-  z-index: -1;
-
+  transform: rotate(-120deg);
   @media screen and (min-width: 910px) {
-    width: 400px;
-    height: 100%;
+    left: 100px;
+    z-index: 2;
+    transform: rotate(-120deg) scale(1.5);
   }
 
   @media screen and (max-width: 910px) {
-    width: 50%;
-    height: 100%;
+    svg {
+      width: 58vw;
+      height: 100%;
+    }
   }
 `;
 

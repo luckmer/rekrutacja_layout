@@ -10,6 +10,27 @@ export const Section = styled.section`
   flex-flow: row wrap;
 `;
 
+export const Left = styled.div`
+  position: absolute;
+  right: 200px;
+
+  @media screen and (min-width: 910px) {
+    right: 200px;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 910px) {
+    height: 100%;
+  }
+
+  svg {
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    opacity: 0.5;
+  }
+`;
+
 export const Rotor = styled.div`
   width: 100%;
   height: auto;
@@ -18,6 +39,12 @@ export const Rotor = styled.div`
   div {
     width: 100%;
   }
+
+  &:nth-child(2) {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
   @media screen and (max-width: 840px) {
     flex-direction: column;
   }
@@ -63,8 +90,9 @@ export const IMG = styled.div`
 
 export const MaxSizer = styled.div`
   max-width: 200px;
+
   width: 100%;
-  padding-top: 50px;
+  padding: 50px 0 0 10px;
 `;
 
 export const Card = styled.div`
@@ -170,8 +198,46 @@ export const BackCard = styled.div`
     border-radius: 0 10px 10px 0;
   }
 
-  @media screen and (max-width: 910px) {
+  @media screen and (max-width: 1025px) {
     border-radius: 10px;
-    left: 10px;
+    left: 12px;
+    top: 5px;
+    z-index: 2;
+  }
+`;
+
+export const CardGroup = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Scale = styled.img`
+  @media screen and (max-width: 910px) {
+    width: 100%;
+  }
+`;
+
+export const GroupDescription = styled.div`
+  padding: 20px 10px 20px 10px;
+
+  p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.325px;
+    color: #99efd0;
+    padding: 0 0 20px 0;
+  }
+
+  span {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #8476aa;
   }
 `;

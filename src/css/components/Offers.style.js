@@ -33,7 +33,7 @@ export const OfferPanel = styled.div`
   flex-flow: row wrap;
 `;
 export const OfferCard = styled.div`
-  max-width: 400px;
+  max-width: ${({ size }) => `${size}px`};
   width: 100%;
   overflow: hidden;
   height: auto;
@@ -46,7 +46,7 @@ export const OfferHeader = styled.header`
   display: flex;
   align-items: center;
   span {
-    padding-left: 15px;
+    padding-left: ${({ status }) => (status ? "15px" : "")};
     font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 22px;
@@ -63,4 +63,8 @@ export const DivSpacer = styled.div`
   @media screen and (max-width: 910px) {
     padding: 10px;
   }
+`;
+
+export const Img = styled.div`
+  padding-bottom: 10px;
 `;
