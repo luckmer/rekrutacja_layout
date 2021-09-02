@@ -107,7 +107,11 @@ export const P = styled.p`
 
 export const Sizer = styled.div`
   cursor: pointer;
-
+  /* box-shadow: */
+  box-shadow: ${({ value }) =>
+    value === "SIGN IN " || value === "DEMO"
+      ? ""
+      : " -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);"};
   padding: 10px 30px 10px 30px;
   border: 1px solid #f2994a;
   box-sizing: border-box;
@@ -115,7 +119,8 @@ export const Sizer = styled.div`
   background-color: ${({ value }) =>
     value === "SIGN IN " || value === "DEMO" ? " " : "#f2994a"};
   p {
-    color: ${({ value }) => (value === "SIGN IN " ? " #f2994a" : "#FFFFFF")};
+    color: ${({ value }) =>
+      value === "SIGN IN " || value === "DEMO" ? " #f2994a" : "#FFFFFF"};
     letter-spacing: 2px;
   }
 
