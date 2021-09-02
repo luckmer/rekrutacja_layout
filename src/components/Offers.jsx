@@ -10,8 +10,8 @@ const Offers = () => {
       </O.DivSpacer>
       <O.OfferPanel>
         {offers.map((name, i) => (
-          <O.OfferCard key={i}>
-            <O.OfferHeader>
+          <O.OfferCard key={i} size={400}>
+            <O.OfferHeader status={true}>
               <img src={name.img} alt="" />
               <span>{name.content}</span>
             </O.OfferHeader>

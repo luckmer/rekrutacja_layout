@@ -1,6 +1,6 @@
 import { Fragment, useState, useEffect } from "react";
-import * as nav from "../css/components/NavBar.style";
 import { userText, loginText } from "../Constants/Constants";
+import * as nav from "../css/components/NavBar.style";
 
 const NavBar = () => {
   const [menu, setMenu] = useState(false);
