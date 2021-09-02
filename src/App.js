@@ -11,6 +11,7 @@ const App = () => {
       <Component.Statistics />
       <Component.About />
       <Component.Business />
+      <Component.ContactPanel />
       <Component.Footer />
     </Main>
   );
